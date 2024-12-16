@@ -10,10 +10,8 @@ body {
     justify-content: center;
     height: 100vh; /* اجعل القسم يأخذ كامل ارتفاع الشاشة */
     position: relative;
-    background-image: url('/assets/DALL·E\ 2024-12-11\ 20.09.33\ -\ A\ stylish\ and\ modern\ salon\ interior\ designed\ to\ be\ used\ as\ a\ background\ for\ a\ front-end\ web\ development\ project.\ The\ space\ includes\ a\ cozy\ seating\ are.webp'); /* ضع مسار صورتك هنا */
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../../../public/assets/background.jpeg') no-repeat center center/cover;
+  
   }
   
   .about::before {
@@ -36,6 +34,7 @@ body {
     max-width: 80%; /* تحديد عرض النص */
     line-height: 1.8;
     margin-bottom: 20vh;
+    
   }
   
   .title {

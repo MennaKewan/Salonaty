@@ -18,9 +18,11 @@ const Logout = ({ onLogout }) => {
 
   return (
     <div className="logout-container">
+      <div className='logout-bg'>
       <div className="logout-message">
         <h2>جاري تسجيل الخروج...</h2>
         <p>من فضلك انتظر لحظة بينما نقوم بتسجيل الخروج.</p>
+      </div>
       </div>
     </div>
   );

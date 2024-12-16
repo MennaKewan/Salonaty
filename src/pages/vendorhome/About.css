@@ -3,29 +3,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
-  .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* اجعل القسم يأخذ كامل ارتفاع الشاشة */
-    position: relative;
-    background-image: url('/public/assets/DALL·E\ 2024-12-11\ 20.09.33\ -\ A\ stylish\ and\ modern\ salon\ interior\ designed\ to\ be\ used\ as\ a\ background\ for\ a\ front-end\ web\ development\ project.\ The\ space\ includes\ a\ cozy\ seating\ are.webp'); /* ضع مسار صورتك هنا */
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.347); /* إضافة طبقة ضباب سوداء */
-    z-index: 1;
-  }
+
+
   
   .about-section {
     position: relative;

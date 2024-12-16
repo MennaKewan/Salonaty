@@ -1,0 +1,69 @@
+/* About.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* اجعل القسم يأخذ كامل ارتفاع الشاشة */
+    position: relative;
+    background-image: url('/assets/DALL·E\ 2024-12-11\ 20.09.33\ -\ A\ stylish\ and\ modern\ salon\ interior\ designed\ to\ be\ used\ as\ a\ background\ for\ a\ front-end\ web\ development\ project.\ The\ space\ includes\ a\ cozy\ seating\ are.webp'); /* ضع مسار صورتك هنا */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.347); /* إضافة طبقة ضباب سوداء */
+    z-index: 1;
+  }
+  
+  .about-section {
+    position: relative;
+    z-index: 2; /* اجعل النص فوق طبقة الضباب */
+    text-align: center;
+    color: white;
+    padding: 10px;
+    max-width: 80%; /* تحديد عرض النص */
+    line-height: 1.8;
+    margin-bottom: 20vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  

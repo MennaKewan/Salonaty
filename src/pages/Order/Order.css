@@ -1,0 +1,164 @@
+/* Background Style */
+.orders-bg {
+    background: url('../../../public/assets/homebackground.jpg') no-repeat center center/cover;
+  
+  }
+  
+  /* Orders Container */
+  .orders-container {
+    padding: 60px;
+    text-align: center;
+    min-height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff; 
+  }
+  
+  /* Add Order Form */
+  .add-order {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-order input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .add-order button {
+    background-color: #ac976a;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+  }
+  
+  .add-order button:hover {
+    background-color: #968b73;
+  }
+  
+  /* Orders Table */
+  .orders-table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #b29c47; /* تغيير لون الـ border إلى الأسود */
+  }
+  
+  .orders-table th {
+    background-color: #ac976a;
+    color: white;
+    font-size: 1rem; /* زيادة حجم الخط */
+  }
+  
+  .orders-table td {
+    color: #ffffff; 
+    font-size: 1rem;
+  }
+  
+  .orders-table td button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #558d62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+  }
+  
+  .orders-table td button:hover {
+    background-color: #79957f;
+  }
+  
+  .orders-table td button:last-child {
+    background-color: #b14a54;
+  }
+  
+  .orders-table td button:last-child:hover {
+    background-color: #cf5b66;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-order {
+        flex-direction: column;
+        gap: 15px;
+    }
+  
+    .orders-table {
+        font-size: 0.9rem;
+    }
+  
+    .orders-table th, .orders-table td {
+        padding: 10px;
+    }
+  
+    .add-order button {
+        font-size: 1rem;
+    }
+  
+    .orders-table td button {
+        font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .orders-container {
+        padding: 10px;
+    }
+  
+    h2 {
+        font-size: 1.5rem;
+    }
+  
+    .add-order input, .add-order button {
+        font-size: 0.9rem;
+    }
+  
+    .orders-table th, .orders-table td {
+        padding: 8px;
+    }
+  
+    .orders-table td button {
+        padding: 5px 8px;
+        font-size: 0.75rem;
+    }
+  }

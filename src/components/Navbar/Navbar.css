@@ -1,0 +1,131 @@
+/* Navbar Container */
+.navbar {
+  background-color: #333;
+  padding: 5px 0; /* تقليل الارتفاع */
+  position: fixed;
+  z-index: 22;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo Styling - تحويله لدائري */
+.logo img {
+  width: 50px; /* تقليل حجم اللوجو */
+  height: 50px;
+  border-radius: 50%; /* جعل اللوجو دائري */
+}
+
+/* Links Styling */
+.links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links ul li {
+  margin: 0 10px;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+  color: #f0f0f0;
+}
+
+/* Menu Icon for Mobile */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Sidebar (Dashboard) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 50px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #f0f0f0;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .sidebar {
+    display: none; /* إخفاء الـ Sidebar عند البدء */
+  }
+
+  .navbar.open .sidebar {
+    display: flex; /* عرض الـ Sidebar عند فتح القائمة */
+  }
+}
+/* إضافات CSS لتمييز الرابط النشط */
+.navbar .links ul li .active {
+color: #F3C04F !important; /* اللون الأصفر */
+font-weight: bold; /* جعل النص سميكًا */
+}

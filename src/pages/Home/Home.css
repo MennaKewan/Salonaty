@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.home {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('../../../public/assets/homebackground.jpg') no-repeat center center/cover;
+
+}
+
+.content {
+    width: 100vw; /* العرض يغطي النافذة بالكامل */
+    height: 100vh; /* الارتفاع يغطي النافذة بالكامل */
+    display: flex; /* لجعل العناصر بداخلها محاذية */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    justify-content: center; /* محاذاة العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر أفقيًا */
+    background-color: rgba(0, 0, 0, 0.384);
+    
+ 
+}
+
+h1 {
+    font-family: 'Georgia', serif; /* خط كلاسيكي أنيق */
+    font-size: 3rem; /* حجم الخط كبير */
+    color: #333; /* لون غامق ولكن هادئ */
+    text-align: center; /* محاذاة النص في المنتصف */
+    letter-spacing: 2px; /* زيادة التباعد بين الحروف */
+    text-transform: capitalize; /* تحويل أول حرف من كل كلمة لحرف كبير */
+    padding: 10px; /* إضافة مسافة داخلية حول النص */
+    border-bottom: 2px solid #aaa; /* إضافة خط بسيط أسفل النص */
+    transition: all 0.3s ease-in-out; /* تأثير عند التفاعل */
+}
+
+/* تأثير عند التفاعل مع النص */
+h1:hover {
+    color: #837b56; /* تغيير اللون عند المرور فوق النص */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* إضافة ظل بسيط */
+    transform: translateY(-5px); /* رفع النص قليلاً عند المرور فوقه */
+}
+/* General Styles */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center;
+    padding: 0 20px; /* Added padding for small screens */
+    box-sizing: border-box;
+    
+
+  }
+  
+  .content {
+    max-width: 100%; /* Full width on smaller screens */
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Slightly smaller font on mobile */
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .white1{
+    color: #fff;
+  }
+  p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  /* Button Styles */
+  .home-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+  button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F3C04F;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+  
+  button:hover {
+    background-color: #c89d41; /* Darker blue on hover */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Smaller title font on tablets and mobile */
+    }
+  
+    p {
+      font-size: 1.1rem; /* Smaller text for paragraph */
+    }
+  
+    .home-btn {
+      flex-direction: column; /* Stack the buttons vertically */
+      gap: 15px;
+    }
+  
+    button {
+      width: 100%; /* Full width buttons on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem; /* Smaller title on very small screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust the paragraph text */
+    }
+  }
+  
+

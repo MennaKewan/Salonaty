@@ -1,0 +1,48 @@
+/* تنسيق الصفحة بشكل أساسي */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* خلفية فاتحة */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .logout-message {
+    padding: 30px;
+    background-color: #ffffff; /* خلفية بيضاء للرسالة */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-message h2 {
+    font-size: 1.8rem;
+    color: #333; /* لون النص */
+    margin-bottom: 10px;
+  }
+  
+  .logout-message p {
+    font-size: 1rem;
+    color: #777; /* لون النص الثانوي */
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .logout-message {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .logout-message h2 {
+      font-size: 1.5rem;
+    }
+  
+    .logout-message p {
+      font-size: 0.9rem;
+    }
+  }
+  

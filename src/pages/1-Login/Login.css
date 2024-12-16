@@ -1,0 +1,76 @@
+.background {
+background-color: rgb(71, 71, 71);
+height: 200vh;
+width: 100vw;
+
+}
+
+
+.title1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form button {
+  background-color: #F3C04F;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.btn5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #F3C04F;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-black {
+  color: black;
+}

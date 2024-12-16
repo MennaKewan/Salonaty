@@ -1,0 +1,210 @@
+/* Background Style */
+.servicebg {
+    background: url('../../../public/assets/homebackground.jpg') no-repeat center center/cover;
+    height: 100vh; 
+  }
+  
+  .service-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+  }
+  
+  .service-bg {
+    background-color: rgba(0, 0, 0, 0.384);
+     /* width: 100%; */
+    height: 100vh;
+  }
+  
+  .service-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    /*width: 100%;
+    */max-width: 300px;
+    background-color: rgba(254, 254, 254, 0.285);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .service-select {
+    margin: 16px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-form {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(87, 87, 87, 0.948);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.884);
+    z-index: 1000;
+    width: 70%;
+    /* max-width: 40vw; */
+    max-height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .order-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .order-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .order-form label {
+    margin-bottom: 5px;
+    width: 100%; /* تعديل العرض */
+  }
+  
+  .order-form input,
+  .order-form select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100% ;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  
+   .button-group {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    width: 40%;
+    gap: 10px;
+  
+  }
+  
+  
+  .order-form button {
+    text-align: center;
+    width: 30px !important;
+   
+  }
+  
+  .order-form button:hover {
+    background-color: #F3C04F;
+  }
+  
+  .order-form button[type="button"] {
+    background-color: #ccc;
+  }
+  
+  .order-form button[type="button"]:hover {
+    background-color: #999;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .service-card {
+      max-width: 100%;
+    }
+   
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    
+  
+    .order-form input,
+    .order-form select {
+      width: 100%; /* ضبط العرض على الشاشات المتوسطة */
+    }
+  
+    .order-form {
+      width: 90%;
+      max-width: 80vw;
+      padding: 15px;
+    }
+  
+    .service-main {
+      flex-direction: column;
+    }
+  }
+  
